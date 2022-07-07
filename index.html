@@ -5,12 +5,16 @@ Welcome to Reddit Bot<br>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Reddit Bot</title>
+	<?PHP
+        echo shell_exec("python main.py");
+        ?>
+
 	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 	<script type="text/python" src="main.py"></script>
 </head>
 <body>
-	<button onclick="myFunction()">Click me</button>
+	<button onclick="myFunction(call main.py)">Click me</button>
 	<py-script>
 		print("Hello World")
 
