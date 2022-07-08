@@ -1,8 +1,9 @@
 <!doctype html>
 
+
 <head>
 	<title>Reddit Bot</title> 
-	<p>Do you want to create a video?<P>
+	<p>Do you want to create a video?</p>
     <meta charset=utf-8> 
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
@@ -13,6 +14,13 @@
  
 </head>
     <body>
-    	<button type="button" onclick="alert('You pressed the button!')" name="Clickable">Click me!</button>
+    	<button type="button" onclick="btn1Click()" name="btn1">Click me!</button>
+    	<p id="btn1" onclick="btn1Click()">Click me.</p>
+    	
+    	<script type="text/python">
+    		function btn1Click() {
+  			document.getElementById("btn1").innerHTML = "YOU CLICKED ME!";
+    	</script>
+
 
     </body>
